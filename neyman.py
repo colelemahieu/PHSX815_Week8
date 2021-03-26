@@ -31,8 +31,9 @@ for i in range(-100,100):
             x = float(random.box_muller(mu_true,sigma))
             mu_best += x
 
-            mu_true_arr.append(mu_true)
-            mu_best_arr.append(mu_best)
+        mu_best = float(mu_best) / float(Nmeas)
+        mu_true_arr.append(mu_true)
+        mu_best_arr.append(mu_best)
 
 
 
